@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header Styles */
+.main-header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.main-header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Intro Section Styles */
+.intro {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.intro h2 {
+    font-size: 2.4rem;
+    color: #2c3e50;
+}
+
+.intro p {
+    font-size: 1.6rem;
+    color: #666;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Highlights Section Styles */
+.highlights {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.highlight {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    flex: 1;
+    text-align: center;
+}
+
+.highlight h3 {
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+.highlight p {
+    font-size: 1.6rem;
+    color: #666;
+}
+
+/* Footer Styles */
+.main-footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.main-footer p {
+    font-size: 1.4rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2.4rem;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .highlights {
+        flex-direction: column;
+    }
+
+    .intro {
+        padding: 1rem;
+    }
+
+    .highlight {
+        padding: 1.5rem;
+    }
+
+    .highlight h3 {
+        font-size: 1.8rem;
+    }
+
+    .highlight p {
+        font-size: 1.4rem;
+    }
+}
