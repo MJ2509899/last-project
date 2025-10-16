@@ -1,15 +1,12 @@
 {
-  "name": "last-project",
+  "name": "my-website",
   "version": "1.0.0",
-  "description": "A personal website built for my term project (Fall 2024) using HTML, CSS, and JavaScript.",
-  "main": "index.HTML",
+  "description": "A personal website built for my term project",
   "scripts": {
-    "start": "serve src",
-    "build": "echo 'Static site - no build step required'"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir dist --public-url ./"
   },
-  "author": "Your Name",
-  "license": "MIT",
-  "dependencies": {
-    "serve": "^14.2.1"
+  "devDependencies": {
+    "parcel": "^2.9.0"
   }
 }
