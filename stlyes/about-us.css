@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header Styles */
+.main-header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.main-header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+/* About Intro Section Styles */
+.about-intro {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.about-intro h2 {
+    font-size: 2.4rem;
+    color: #2c3e50;
+}
+
+.about-intro p {
+    font-size: 1.6rem;
+    color: #666;
+}
+
+/* Team Section Styles */
+.team {
+    margin-top: 3rem;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.team-member h3 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    font-size: 1.6rem;
+    color: #666;
+}
+
+/* Footer Styles */
+.main-footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.main-footer p {
+    font-size: 1.4rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2.4rem;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about-intro {
+        padding: 1rem;
+    }
+
+    .team-member {
+        padding: 1.5rem;
+    }
+
+    .team-member h3 {
+        font-size: 1.8rem;
+    }
+
+    .team-member p {
+        font-size: 1.4rem;
+    }
+}
