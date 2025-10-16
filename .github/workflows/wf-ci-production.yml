@@ -1,29 +1,20 @@
 name: ci-production
 on:
-  push:
+  pull_request:
     branches:
       - production
-
 jobs:
   ci-production-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: checkout repo
         uses: actions/checkout@v4
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Lint HTML and CSS
+        with:
+          ref: ${{github.ref}}
+      - name: Lint HTML and CSS Code 
         run: |
           npx htmlhint "**/*.html"
           npx stylelint "**/*.css"
-
-      - name: Build Artifact
-        run: npm run build
-
-      - name: Upload Artifact (optional)
-        uses: actions/upload-artifact@v3
-        with:
-          name: production-artifact
-          path: ./dist
+      - name: Build Artifact 
+        run: |
+          npx parcel build "./src/index.html" --dist-dir "./dist" --public-url "./"
