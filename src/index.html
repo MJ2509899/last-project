@@ -6,15 +6,17 @@
     <meta name="description" content="Welcome to our startup company. Explore our services and portfolio.">
     <title>Home | Startup Website</title>
     <link rel="stylesheet" href="../stlyes/index.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stlyes/index.css') }}">
+
 </head>
 <body>
     <header class="main-header">
         <h1>Welcome to Our Startup</h1>
         <nav class="main-nav">
             <ul>
-                <li><a href="../src/index.html">Home</a></li>
-                 <li><a href="../src/about-us.html">About Us</a></li>
-                 <li> <a href="../src/my-portfolio.html">My portfolio</a></li>
+               <a href="{{ url_for('home') }}">Home</a>
+              <a href="{{ url_for('about') }}">About Us</a>
+             <a href="{{ url_for('portfolio') }}">Portfolio</a>
             </ul>
         </nav>
     </header>
